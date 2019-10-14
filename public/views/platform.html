@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html itemscope="itemscope" itemtype="https://schema.org/WebPage" xmlns="https://www.w3.org/1999/xhtml" lang="en-US"
+      prefix="og: http://ogp.me/ns#">
+
+<!-- Mirrored from www.vnptproject.org/platform by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2019 01:23:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="csrf-token" content="t3EkZkRTWhNozzLiHrSc6iB7R6O70t9TF4irZUfU">
+  <title>Technical capabilities and IoT architecture of VNPT</title>
+  <link rel="shortcut icon" href="uploads/2015/06/favicon.png"/>
+  <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+  <link href="css/app7069.css?id=ed9800a0f51c2270151e" rel="stylesheet" type="text/css">
+  <script src="libs/jquery-3.3.1.min.js"></script>
+  <script src="js/appecaa.js?id=10a2772615a3e0af684c" type="text/javascript"></script>
+  <!-- <link rel="css/boots.css" rel="stylesheet" type="text/css"> -->
+
+  <!--CodeMirror-->
+  <script src="libs/codemirror/codemirror-5.47.0.min.js"></script>
+  <script src="libs/codemirror/codemirror-autorefresh.js"></script>
+  <script src="libs/codemirror/mode/python/python.js"></script>
+  <script src="libs/codemirror/addon/scroll/scrollpastend.js"></script>
+  <script src="libs/codemirror/addon/scroll/simplescrollbars.js"></script>
+  <link rel="stylesheet" href="libs/codemirror/addon/scroll/simplescrollbars.css">
+  <link rel="stylesheet" href="libs/codemirror/codemirror.css">
+  <link rel="stylesheet" href="libs/codemirror/theme/idea.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <!--CodeMirror end-->
+
+  <script type="application/ld+json">
+   { "@context" : "http://schema.org",
+   "@type" : "Organization",
+   "name" : "VNPTIoT Technologies LLC",
+   "url" : "http://www.vnptproject.org",
+   "sameAs" : [ "http://www.facebook.com/VNPTIoT",
+      "http://www.twitter.com/VNPTIoT",
+      "https://www.linkedin.com/company/vnpt-enterprise-iot-platform"]
+   }
+  </script>
+
+  <meta name="description" content="VNPT Enterprise offers a cloud-native IoT architecture based on microservices and enables exceptional flexibility of IoT application development, deployment, and customization."/>
+  <meta name="keywords" content=""/>
+  <link rel="canonical" href="platform.html"/>
+
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Technical capabilities and IoT architecture of VNPT"/>
+  <meta property="og:description" content="VNPT Enterprise offers a cloud-native IoT architecture based on microservices and enables exceptional flexibility of IoT application development, deployment, and customization."/>
+  <meta property="og:url" content="https://www.vnptproject.org/"/>
+  <meta property="og:site_name" content="VNPT IoT platform"/>
+  <meta property="og:image" content="https://www.vnptproject.org/uploads/2014/09/vnptwhite.png" alt="VNPT logo"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:description" content="VNPT Enterprise offers a cloud-native IoT architecture based on microservices and enables exceptional flexibility of IoT application development, deployment, and customization."/>
+  <meta name="twitter:title" content="Technical capabilities and IoT architecture of VNPT"/>
+  <meta name="twitter:site" content="@vnptiot"/>
+  <meta name="twitter:image" content="https://www.vnptproject.org/uploads/2014/09/vnptwhite.png" alt="VNPT logo"/>
+  <meta name="twitter:creator" content="@vnptiot"/>
+  <link rel='dns-prefetch' href='http://s.w.org/'/>
+  <link rel="alternate" type="application/rss+xml" title="VNPT &raquo; Feed" href="feed/index.html"/>
+  <script>window.loadEvents = [];</script>
+
+  
+<!-- Page hiding snippet  -->
+  <style>.async-hide {
+      opacity: 0 !important
+    } </style>
+  <script>(function (a, s, y, n, c, h, i, d, e) {
+      s.className += ' ' + y;
+      h.start = 1 * new Date;
+      h.end = i = function () {
+        s.className = s.className.replace(RegExp(' ?' + y), '')
+      };
+      (a[n] = a[n] || []).hide = h;
+      setTimeout(function () {
+        i();
+        h.end = null
+      }, c);
+      h.timeout = c;
+    })(window, document.documentElement, 'async-hide', 'dataLayer', 2000,
+        {'GTM-TN4KRX': true});</script>
+
+  <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start':
+              new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-TN4KRX');</script>
+    <!-- End Google Tag Manager -->
+<!-- Hotjar Tracking Code for vnptproject.org -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {hjid: 1161285, hjsv: 6};
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+<div class="gitex__block --font-rubik fixed fixed--top">
+  <div class="gitex__block-wrapper">
+    <a target="_blank" href="https://www.gitex.com/">
+      <img src="img/up-io/1-up-io-2-d-wahm-a-6-yxsocc-2-vw.png"
+           srcset="/img/up-io/1-up-io-2-d-wahm-a-6-yxsocc-2-vw@2x.png 1024w, /img/up-io/1-up-io-2-d-wahm-a-6-yxsocc-2-vw@3x.png 568w"
+           alt="Gitex"/>
+    </a>
+    <h2 class="gitex__block-title">Meet our team at GITEX</h2>
+    <div class="gitex__block-announce">
+      <h2>06-10</h2>
+      <h3>october 19</h3>
+    </div>
+    <a href="contact-us/index.html">
+      <button class="b-button--rounded-blue --text-bold">Contact us</button>
+    </a>
+    <div class="gitex__block-close"></div>
+  </div>
+</div>
+
+<body class="advantages --background--white" data-backText="Back" data-vm-anim="1">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN4KRX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<div id="mk-boxed-layout">
+  <div id="mk-theme-container" class="mk-transparent-header">
+    <header id="mk-header" data-height="80" data-hover-style="5" data-transparent-skin="light" data-header-style="1" data-sticky-height="90"
+            data-sticky-style="fixed" data-sticky-offset="header"
+            class="header-style-1 header-align-left header-toolbar-false mk-background-stretch boxed-header transparent-header light-header-skin remove-header-bg-true position--absolute">
+      <div class="mk-header-holder ">
+        <div class="navigation--block">
+                    <div class="mk-header-inner --font-rubik">
+    <div class="mk-header-bg "></div>
+    <div class="mk-grid header-grid">
+      <div class="mk-header-nav-container one-row-style menu-hover-style-5">
+        <nav id="mk-main-navigation" class="main_menu --float--left nav--flex">
+          <ul class="main-navigation-ul nav-left">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page  no-mega-menu ">
+                <a class="menu-item-link nav__item" href="overview.html" target="">
+                  <span>Đặc trưng</span>
+                </a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page  no-mega-menu ">
+                <a class="menu-item-link nav__item" href="platform.html"target="">
+                  <span>Ưu điểm</span>
+                </a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page  no-mega-menu ">
+                <a class="menu-item-link nav__item"href="docs.html"target=" _blank ">
+                  <span>Tài liệu </span>
+                </a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-has-children  no-mega-menu ">
+                <a class="menu-item-link nav__item disabled"href="#"target="">
+                  <span>Giải pháp</span>
+                </a>
+                <ul class="sub-menu">
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a class="menu-item-link nav__item" href="smart-farming.html">Nông nghiệp</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a class="menu-item-link nav__item" href="automotive.html">Ô tô</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a class="menu-item-link nav__item" href="consumer-electronics.html">Điện tử dân dụng</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a class="menu-item-link nav__item" href="healthcare.html">Sức khỏe</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a class="menu-item-link nav__item" href="industrial-automation.html">Internet công nghiệp</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a class="menu-item-link nav__item" href="logistics.html">Hậu cần</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a class="menu-item-link nav__item" href="smart-city.html">Thành phố thông minh</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a class="menu-item-link nav__item" href="smart-energy.html">Năng lượng thông minh</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a class="menu-item-link nav__item" href="retail.html">Bán lẻ thông minh</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a class="menu-item-link nav__item" href="sport-fitness.html">Thể thao &amp; thể hình
+                      </a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a class="menu-item-link nav__item" href="telecom.html">Viễn thông</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a class="menu-item-link nav__item" href="wearables.html">Thiết bị đeo</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page  no-mega-menu ">
+                <a class="menu-item-link nav__item"href="pricing.html"target="">
+                  <span>Giá cả</span>
+                </a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page  no-mega-menu ">
+                <a class="menu-item-link nav__item"href="contact-us.html"target="">
+                  <span>Liên hệ</span>
+                </a>
+              </li>
+          </ul>
+          <ul class="main-navigation-ul nav-right">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu">
+              <a class="nav__item" href="https://id.vnptiot.io/auth/realms/master/protocol/saml?SAMLRequest=fVNdj9owEHy%2FX4HyDk4irugsiEShH0gUIqB96EvlOJs7t4mdejcH9%2B%2FPTuDgqiqWpSjr2fHs7HqKoiprPm%2FoSe%2FgbwNIdwO3TlWpkbeHs6CxmhuBCrkWFSAnyffzb2sej0JeW0NGmjL4J60%2FSyCCJWV0l7ZazoLt5tN6%2B2W1%2BSWLEOCDvJ%2FERRaJ%2ByybPEA2nsSRlOPxJMuzLCrCOCu61B9g0fHMAkfbRVJrnlUOduNunQVLhXUpXgb%2B73wZYgMrjSQ0ubQwehhGoduHMOKx2%2BOfHW7pvFBaUMv%2BRFQjZ0zloz9CKEMjZZhwrjELoqyQVQIJLLvYwbwHb3ra0Eelc6Uf%2B43JOhDyr4dDOky3%2B0NHMr8YtjAamwrsHuyzkvB9t76KOx6PXp3T8BskjYx9bGXETEgMkpZn6gO8tcAm77FTdnt2Rdfce7dapqZU8qWN%2B%2FXZ2EpQfzU%2BovJh0UJ57VvlXNIUvLHMy9IcF85Dcr0i20AwYO%2FuPg8l5O2IuuoJTjRYmKoWVqFvDZyEpHN51xJv4YvSzdsOiqR3JCWXHufCqfscjc1955w5kB%2Bs0FgbS2eP%2FkveqWY9spO7y%2FHte0teAQ%3D%3D&amp;RelayState=http%3A%2F%2Fwww.vnptproject.org%2F">Đăng nhập | Đăng kí</a>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page  no-mega-menu">
+              <a class="menu-item-link nav__item"href="demo.html" target="">
+                <span>Giới thiệu trực tuyến</span>
+              </a>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page  no-mega-menu">
+              <a class="menu-item-link nav__item b-button--rounded--grey"href="free-trial.html"target="">
+                <span>Thử miễn phí</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class=" mk-nav-responsive-link">
+        <div class="mk-css-icon-menu">
+          <div class="mk-css-icon-menu-line-1"></div>
+          <div class="mk-css-icon-menu-line-2"></div>
+          <div class="mk-css-icon-menu-line-3"></div>
+        </div>
+      </div>
+      <div class="header-logo">
+        <a href="index.html" title="VNPT Enterprise IoT Platform"><img alt="VNPT Enterprise IoT Platform" src="https://upload.wikimedia.org/wikipedia/vi/thumb/6/65/VNPT_Logo.svg/1200px-VNPT_Logo.svg.png"></a>   
+      </div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="mk-header-right">
+    </div>
+  </div>
+  <div id="mk-responsive-wrap" style="max-height:522px">
+    <ul id="mk-responsive-nav" class="">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu  ">
+        <a class="menu-item-link " href="overview.html">
+          Features
+                  </a>
+              </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu  ">
+        <a class="menu-item-link " href="./platform.html">
+          Advantages
+                  </a>
+              </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu  ">
+        <a class="menu-item-link " href="https://docs.vnptiot.io/">
+          Docs
+                  </a>
+              </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu  menu-item-has-children  ">
+        <a class="menu-item-link  disabled " href="#">
+          Solutions
+                    <span class="mk-moon-arrow-down mk-nav-arrow mk-nav-sub-closed"></span>
+                  </a>
+                <ul class="sub-menu">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a class="menu-item-link" href="smart-farming.html">
+              Agriculture
+            </a>
+          </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a class="menu-item-link" href="automotive.html">
+              Automotive
+            </a>
+          </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a class="menu-item-link" href="consumer-electronics.html">
+              Consumer electronics
+            </a>
+          </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a class="menu-item-link" href="healthcare.html">
+              Healthcare
+            </a>
+          </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a class="menu-item-link" href="industrial-automation.html">
+              Industrial Internet of Things
+            </a>
+          </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a class="menu-item-link" href="logistics.html">
+              Logistics
+            </a>
+          </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a class="menu-item-link" href="smart-city.html">
+              Smart City
+            </a>
+          </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a class="menu-item-link" href="smart-energy.html">
+              Smart Energy
+            </a>
+          </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a class="menu-item-link" href="retail.html">
+              Smart Retail
+            </a>
+          </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a class="menu-item-link" href="sport-fitness.html">
+              Sport &amp; fitness
+            </a>
+          </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a class="menu-item-link" href="telecom.html">
+              Telecom
+            </a>
+          </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a class="menu-item-link" href="wearables.html">
+              Wearables
+            </a>
+          </li>
+                  </ul>
+              </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu  ">
+        <a class="menu-item-link " href="pricing.html">
+          Pricing
+                  </a>
+              </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu  ">
+        <a class="menu-item-link " href="contact-us.html">
+          Contact us
+                  </a>
+              </li>
+      
+            <li class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu  ">
+        <a class="menu-item-link " href="vnpt-enterprise-demo/index.html">
+          Live Demo
+                  </a>
+              </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu  b-button--rounded--grey">
+        <a class="menu-item-link " href="free-trial.html">
+          Get free trial
+                  </a>
+              </li>
+          </ul>
+  </div>
+                      <span class="auth auth--absolute auth--burger">
+                                        <a class="hover-orange" href="https://id.vnptiot.io/auth/realms/master/protocol/saml?SAMLRequest=fVNdb%2BIwEHzvr0B5BwdoaWIBEgf3gcQBAq4PfTkZe9v6LrFz3k2h%2F%2F7sBAo9nWJFijKend2d3QxR5FnBJyW9mA38KQHppuXPMc8M8upyFJXOcCtQIzciB%2BQk%2BXbyfcF7nZgXzpKVNov%2BCWuOEojgSFtTh81no2i1%2FLxYfZ0vf6aQqPv7uwHcQW8v%2B7fJLcg4SVQ%2FTdVepgPwWD9NBnXoAzj0OqPIy9bI2tlXrcAtfdZRNNNYZOKtFb5OyRBLmBskYciHxd203Y39s4u7vNfn3eSx5s28F9oIqtRfiArkjGnV%2BS2EttTRlgnvGnMgshxZLpDAsbMdLHjwXk8FfdJGafPcbMy%2BJiH%2Fttut2%2BvVdleLTM6GTa3BMge3BfeqJfzYLC7FHQ6HUJ2v4RdI6lj3XJXRY0JiNK50hgHglQVu%2FJE7ZNd3F3bBg3fz2dpmWr5VeDhfrMsFNXcTEK3aTxWVF2FU3iVD0bvKJMvsYeo9JD8rciVELfYh92kpQVUr6rsnOFJravNCOI1hNHAUkk7tXVq8pk8zv28beBo3rqTkMvA8vPavg3UqTM6bA2rnhMHCOjp59F%2FxumrWUPb45nx9%2Fb%2BN%2FwI%3D&amp;RelayState=http%3A%2F%2Fwww.vnptproject.org%2Fplatform">Log in | Sign up</a>
+                                   </span>
+                  </div>
+      </div>
+    </header>
+
+    <div class="page-content-wrapper --font-rubik">
+  <section class="jumbotron --bg--abstract-platform">
+    <div class="platform-info__top-banner">
+      <h1 class="jumbotron__header --color--white">Lợi thế kỹ thuật VNPT và kiến ​​trúc IoT</h1>
+    </div>
+  </section>
+  <div class="page_container bb-overview">
+
+    <div class="--d--flex platform-info__intro-block">
+      <div class="platform-info__navigation">
+        <a href="#microservice-architecture">Kiến trúc MICROSERVICE tùy chỉnh</a>
+        <a href="#techology-freedom">Tự do công nghệ</a>
+        <a href="#infrastructure">SCALABLE, ELASTIC và tự động</a>
+        <a href="#freedom-of-deployment">Tự do triển khai</a>
+        <a href="#open-iot-protocols">Mở giao thức IoT</a>
+        <a href="#gateway-support">Hỗ trợ cổng</a>
+        <a href="#security">Bảo mật</a>
+        <a href="#multi-application">Đa ứng dụng</a>
+        <a href="#application-versioning">Phiên bản ứng dụng</a>
+        <a href="#blueprints">Bản thiết kế</a>
+        <a href="#open-components">Được xây dựng trên các thành phần mở</a>
+        <a href="#vendor-services">Dịch vụ từ nhà cung cấp</a>
+      </div>
+      <div class="platform-info__text">
+        <h1 class="platform-info__intro-title">Ưu điểm của nền tảng VPNT</h1>
+        <p>
+            VNPT cung cấp một số lợi thế quan trọng để phát triển và triển khai IoT nhanh chóng.</strong>.
+        </p>
+        <p>
+            Nó dựa trên kiến ​​trúc microservice tùy biến và các giao thức mở, cho phép khả năng mở rộng và bảo mật ở cấp độ doanh nghiệp và nhấn mạnh vào sự tự do của nhà phát triển liên quan đến sự lựa chọn công nghệ, loại hình triển khai và tích hợp của bên thứ ba.
+        </p>
+      </div>
+    </div>
+
+    <div class="section--background--img background--cloud-shape-1 background--size--small" id="microservice-architecture">
+      <div class="--flex--wrap platform-info__section__content --flex-direction-row-reverse">
+        <img data-aos="fade-left" src="img/platform/map.svg" alt="Customizable microservice architecture of the VNPT IoT platform"
+             class="platform-info__section__img aos-init aos-animate"/>
+        <div data-aos="fade-right" class="platform-info__content__text aos-init aos-animate">
+          <h2 class="platform-info__section__title">Kiến trúc microservice tùy biến</h2>
+          <p>
+            Mọi tính năng của nền tảng VNPT, như nhắn tin hoặc trực quan hóa, về cơ bản là một tập hợp các dịch vụ siêu nhỏ thực hiện các chức năng cụ thể của chúng. Dịch vụ kính hiển vi <strong>đơn giản hóa tùy biến và đảm bảo phân tách hiệu quả các mối quan tâm</strong>
+            giữa các phần khác nhau của nền tảng.
+          </p>
+          <p>
+            Các dịch vụ siêu nhỏ VNPT <strong>tương tác thông qua các API mở và có thể được tích hợp với các hệ thống của bên thứ ba</strong> và được sắp xếp lại theo nhu cầu của bạn. Bạn thậm chí có thể bỏ qua những dịch vụ siêu nhỏ mà bạn không cần hoặc thay thế bất kỳ dịch vụ nào bằng các thành phần của riêng bạn.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--background--img background--cloud-shape-2 background--size--small" id="techology-freedom">
+      <div class="--flex--wrap platform-info__section__content">
+        <img
+            src="img/platform/technology_agnostic.png"
+            srcset="/img/platform/technology_agnostic@2x.png 2x,
+                    /img/platform/technology_agnostic@3x.png 3x"
+            alt="Logos of some of the DevOps tools and programming languages that can be used with VNPT IoT platform"
+            class="platform-info__section__img aos-init aos-animate"
+            data-aos="fade-right"
+        />
+        <div data-aos="fade-left" class="platform-info__content__text aos-init aos-animate">
+          <h2 class="platform-info__section__title">Tự do công nghệ</h2>
+          <p>Theo các thông lệ tốt nhất trong ngành, VNPT điều hành các dịch vụ siêu nhỏ của mình trong các <strong>Docker containers</strong>. Điều này có nghĩa là bạn có thể sử dụng các <strong>công cụ DevOps yêu thích của bạn khi triển khai các giải pháp dựa trên VNPT</strong> trong bất kỳ môi trường nào.</p>
+          <p> Hơn nữa, VNPT sử dụng <strong>giao diện được xác định rõ dựa trên REST và NATS,</strong>, điều này làm cho nó trở thành bất khả tri về công nghệ và cho phép bạn phát triển và triển khai các ứng dụng được viết bằng hầu như bất kỳ ngôn ngữ lập trình nào.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--background--img background--cloud-shape-3 background--size--small" id="infrastructure">
+      <div class="--flex--wrap platform-info__section__content --flex-direction-row-reverse --flex--column">
+        <img data-aos="fade-left" src="img/platform/scalability.svg"
+             alt="Scheme of highly available type of deployment utilized by the VNPT IoT platform"
+             class="platform-info__section__img aos-init aos-animate"/>
+        <div data-aos="fade-right" class="platform-info__content__text aos-init aos-animate">
+          <h2 class="platform-info__section__title">Có thể mở rộng, đàn hồi và tự phục hồi</h2>
+          <p>VNPT có thể mở rộng theo thiết kế và <strong>có thể được mở rộng đàn hồi</strong> bằng cách thêm nhiều máy chủ vào cụm VNPT. Với VNPT, bạn có thể hỗ trợ đáng tin cậy bao nhiêu điểm cuối mà bạn cần.</p>
+          <p>Nền tảng đảm bảo sự ổn định của hoạt động bằng cách sử dụng một<strong>loại triển khai có sẵn cao:</strong>: mọi bản sao dịch vụ đều quan trọng như nhau, không có quan hệ chủ nô và không có điểm thất bại duy nhất.</p>
+          <p>Cùng với <strong>khả năng tự phục hồi</strong> được cung cấp bởi một hệ thống điều phối container, chẳng hạn như Kubernetes, điều này giúp khôi phục nền tảng khi có bất kỳ lỗi nào.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--background--img background--cloud-shape-4 background--size--small" id="freedom-of-deployment">
+      <div class="--flex--wrap platform-info__section__content --flex--column">
+        <img data-aos="fade-left" src="img/platform/deployment.png"
+             srcset="/img/platform/deployment@2x.png 2x,
+                       /img/platform/deployment@3x.png 3x"
+             alt="Public clouds logos"
+             class="platform-info__section__img multiapp aos-init aos-animate"/>
+        <div data-aos="fade-right" class="platform-info__content__text aos-init aos-animate">
+          <h2 class="platform-info__section__title">Tự do triển khai</h2>
+          <p>Bạn được tự do <strong>triển khai dịch vụ VNPT ở bất cứ đâu bạn thích</strong>. Bạn có thể làm điều đó tại trung tâm dữ liệu của riêng bạn, cơ sở dữ liệu trần hoặc máy ảo hoặc bạn có thể lưu trữ VNPT trên một số cơ sở hạ tầng đám mây công cộng.</p>
+          <p> Nền tảng cũng là <strong>hoàn hảo cho việc triển khai lai</strong>, ví dụ, khi một công ty điều hành VNPT trong trung tâm dữ liệu của riêng mình và thu nhỏ nó vào đám mây bất cứ khi nào nhu cầu về hiệu suất tăng.</p>
+          <p> Các tùy chọn triển khai đám mây riêng và tại chỗ cung cấp <strong>toàn quyền kiểm soát hệ thống,</strong>, thường là một yêu cầu trong <strong>lĩnh vực bảo mật nghiêm ngặt.</strong>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--background--img background--cloud-shape-5 background--size--small" id="open-iot-protocols">
+      <div class="--flex--wrap platform-info__section__content --flex--column">
+        <img data-aos="fade-left" src="img/platform/protocol.png"
+             srcset="/img/platform/protocol@2x.png 2x,
+                       /img/platform/protocol@3x.png 3x"
+             alt="Messaging via open IoT protocols"
+             class="platform-info__section__img aos-init aos-animate"/>
+        <div data-aos="fade-right" class="platform-info__content__text aos-init aos-animate">
+          <h2 class="platform-info__section__title">Mở giao thức IoT</h2>
+          <p>
+            Nền tảng VNPT hỗ trợ nhắn tin với các thiết bị thông qua <strong>MQTT and CoAP</strong>. Hai giao thức IoT được sử dụng rộng rãi này có hàng tá triển khai cho tất cả các ngôn ngữ chính.</p>
+          <p> ác giao thức cấp độ ứng dụng của VNPT theo mặc định sử dụng rộng rãi <strong>mã hóa JSON</strong> có sẵn trong tất cả các ngôn ngữ lập trình.</p>
+          <p> Các giao thức VNPT được phát triển thông qua <a class="link--blue" href="https://github.com/vnptproject/vnpt-rfcs"
+                                                     target="_blank" rel="noopener">a transparent RFC process and are completely open</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--background--img background--cloud-shape-6 background--size--small" id="gateway-support">
+      <div class="--flex--wrap platform-info__section__content --flex--column">
+        <img data-aos="fade-left" src="img/platform/gateway.svg"
+             alt="Scheme of devices connected to the VNPT IoT platform via an IoT gateway"
+             class="platform-info__section__img aos-init aos-animate"/>
+        <div data-aos="fade-right" class="platform-info__content__text aos-init aos-animate">
+          <h2 class="platform-info__section__title">Hỗ trợ cổng</h2>
+          <p>Tùy thuộc vào loại thiết bị của bạn, bạn có thể chọn giữa hai tùy chọn kết nối thiết bị: <strong>hoặc kết nối chúng trực tiếp hoặc thông qua một cổng IoT.</strong>. Sử dụng cổng, bạn có thể có kết nối đa kênh trong đó cổng sử dụng một kết nối máy chủ để liên lạc tin nhắn đến / từ nhiều thiết bị, trái ngược với việc có một kết nối riêng cho từng thiết bị.</p>
+          <p> Cổng IoT cũng có ích khi các thiết bị của bạn không hỗ trợ bất kỳ giao thức VNPT nào, bởi vì nó có thể <strong>chuyển đổi ngữ nghĩa dữ liệu và nội dung của tin nhắn thiết bị</strong> vào các giao thức được hỗ trợ bởi nền tảng VNPT.</p>
+          <p> Sử dụng cổng như vậy có thể là lựa chọn duy nhất cho <strong>cảm biến với sức mạnh tính toán nhỏ</strong>, các thiết bị trong môi trường IoT cục bộ, chẳng hạn như <strong>LoRaWAN or ZigBee</strong>, hoặc <strong>thiết bị cũ</strong> không cung cấp quyền truy cập vào mã nguồn hoặc chương trình cơ sở của họ.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--background--img background--cloud-shape-7 background--size--small" id="security">
+      <div class="--flex--wrap platform-info__section__content --flex-direction-row-reverse">
+        <img data-aos="fade-left" src="img/platform/security.png"
+             srcset="/img/platform/security@2x.png 2x,
+                    /img/platform/security@3x.png 3x" alt="Security of the VNPT IoT platform"
+             class="platform-info__section__img aos-init aos-animate"/>
+        <div data-aos="fade-right" class="platform-info__content__text aos-init aos-animate">
+          <h2 class="platform-info__section__title">Bảo mật</h2>
+          <p>Theo mặc định, giao tiếp VNPT với các thiết bị được bảo mật bằng <strong>TLS or DTLS</strong>. Các thiết bị xác thực máy chủ bằng cách kiểm tra chứng chỉ TLS của nó; máy chủ VNPT hỗ trợ nhiều phương thức để xác thực thiết bị, từ không có gì đến các khóa được chia sẻ trước để kiểm tra chứng chỉ TLS phía máy khách. Hơn nữa, việc triển khai TLS cho khách hàng web của chúng tôi đã nhận được điểm "A" trong <a href="https://www.ssllabs.com/ssltest/analyze.html?d=building.vnptiot.net" class="link--blue"
+                                        target="_blank">Qualsys' Labs Server SSL test</a>.
+          </p>
+          <p>Ngoài ra, tính năng VNPT <strong>quản lý vòng đời thông tin linh hoạt</strong>, cho phép bạn cung cấp, tạm dừng / không cho phép và thu hồi thông tin đăng nhập thiết bị.</p>
+          <p>Các phiên bản nền tảng được lưu trữ VNPTIoT cho khách hàng của chúng tôi thường nằm trong cơ sở hạ tầng được cung cấp bởi OVH, một trong những nhà cung cấp dịch vụ lưu trữ lớn nhất châu Âu. OVH đã thu được <a href="https://www.ovh.com/world/about-us/certifications.xml"
+                                                                    class="link--blue" target="_blank">certifications</a> như là
+            <strong>ISO/IEC 27001, PCI DSS</strong>, và những điều khác.
+          </p>
+          <p>Khách hàng của chúng tôi đã chọn VNPT cho các dự án trong lĩnh vực Y tế và Y tế, đã đạt được<strong>HIPAA</strong> tuân thủ và thông qua thành công <strong>FDA</strong> giải tỏa.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--background--img background--cloud-shape-8 background--size--small" id="multi-application">
+      <div class="--flex--wrap platform-info__section__content">
+        <img data-aos="fade-right" src="img/platform/multiapp.svg" alt="VNPT Solution Cluster scheme" class="platform-info__section__img aos-init aos-animate"/>
+        <div data-aos="fade-left" class="platform-info__content__text aos-init aos-animate">
+          <h2 class="platform-info__section__title">Đa ứng dụng</h2>
+          <p>Ứng dụng VNPT định nghĩa một loại thiết bị riêng biệt có một bộ chức năng và khả năng duy nhất: xem xét một bộ theo dõi thể dục, xe hơi hoặc bộ truyền phát viễn thông. Mỗi điểm cuối VNPT được quy cho một Ứng dụng. Điều này có ích <strong>tổ chức hệ sinh thái thiết bị của bạn, cách ly chức năng quản lý thiết bị và quản lý luồng dữ liệu</strong> trong nền tảng. Một cụm Giải pháp VNPT có thể hỗ trợ nhiều Ứng dụng VNPT, cho phép tương tác giữa các ứng dụng.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--background--img background--cloud-shape-1 background--size--small" id="application-versioning">
+      <div class="--flex--wrap platform-info__section__content --flex--column">
+        <img data-aos="fade-right" src="img/platform/versioning.svg" alt="IoT application versioning" class="platform-info__section__img aos-init aos-animate"/>
+        <div data-aos="fade-left" class="platform-info__content__text aos-init aos-animate">
+          <h2 class="platform-info__section__title">Phiên bản ứng dụng</h2>
+          <p>Theo thiết kế, VNPT hỗ trợ <strong>phiên bản ứng dụng linh hoạt.</strong>. Các phiên bản ứng dụng khác nhau cho phép bạn xác định các chức năng và khả năng khác nhau cho các điểm cuối của mình. Ví dụ, khi giải pháp IoT của bạn phát triển theo thời gian, một số khả năng mới có thể được giới thiệu, trong khi những giải pháp khác đã nghỉ hưu.</p>
+          <p> Điều quan trọng, nền tảng VNPT <strong>duy trì sự hỗ trợ của tất cả các phiên bản ứng dụng</strong> được sử dụng bởi các thiết bị của bạn trong lĩnh vực này. Điều này giúp tăng tốc đáng kể sự phát triển của giải pháp IoT của bạn từ MVP sang sản phẩm giành được thị trường.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--background--img background--cloud-shape-2 background--size--small" id="blueprints">
+      <div class="--flex--wrap platform-info__section__content --flex-direction-row-reverse">
+        <img data-aos="fade-left" src="img/platform/blueprint.png"
+             srcset="/img/platform/blueprint@2x.png 2x,
+                    /img/platform/blueprint@3x.png 3x" alt="VNPT solution blueprint" class="platform-info__section__img aos-init aos-animate"/>
+        <div data-aos="fade-right" class="platform-info__content__text aos-init aos-animate">
+          <h2 class="platform-info__section__title">Bản thiết kế</h2>
+          <p>Kế hoạch chi tiết giải pháp VNPT là một <strong>định nghĩa khai báo của một giải pháp IoT.</strong>. Nó xác định đầy đủ chức năng hệ thống bằng cách khai báo các dịch vụ siêu nhỏ cần thiết cùng với cấu hình của chúng.</p>
+          <p> Bản thiết kế được lưu trữ trong <strong>tập tin văn bản đơn giản, dễ đọc</strong> và trao quyền cho bạn với <strong>Cơ sở hạ tầng như Mã</strong> cách tiếp cận để quản lý các cụm của bạn.</p>
+          <p> Một bản thiết kế có thể được sử dụng để <strong>đáng tin cậy triển khai các phiên bản giống hệt nhau của cùng một giải pháp cho các môi trường khác nhau của bạn:</strong>: phát triển, thử nghiệm, dàn dựng, sản xuất, vv. Ngay cả khi họ ngồi ở các nhà cung cấp cơ sở hạ tầng khác nhau.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--background--img background--cloud-shape-3 background--size--small" id="open-components">
+      <div class="--flex--wrap platform-info__section__content">
+        <img data-aos="fade-right" alt="Open-source IoT components"
+             src="img/platform/open-components.png"
+             srcset="/img/platform/open-components@2x.png 2x,
+                    /img/platform/open-components@3x.png 3x"
+             class="platform-info__section__img aos-init aos-animate"
+        />
+        <div data-aos="fade-left" class="platform-info__content__text aos-init aos-animate">
+          <h2 class="platform-info__section__title">Được xây dựng trên các thành phần mở</h2>
+          <p>Nền tảng VNPT dựa trên nhiều <strong>các thành phần nguồn mở phổ biến, đã được chứng minh và được thử nghiệm tốt</strong>. Kiểu thiết kế này cải thiện đáng kể một đường cong học tập cho người dùng mới và làm cho VNPT mở và tùy biến cao từ chính cốt lõi của nó.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section--background--img background--cloud-shape-4 background--size--small" id="vendor-services">
+      <div class="--flex--wrap platform-info__section__content --flex-direction-row-reverse">
+        <img data-aos="fade-left" src="img/platform/services_from_vendor.svg" alt="VNPTIoT Technologies logo" class="platform-info__section__img aos-init aos-animate"/>
+        <div data-aos="fade-right" class="platform-info__content__text aos-init aos-animate">
+          <h2 class="platform-info__section__title">Dịch vụ từ nhà cung cấp</h2>
+          <p>Nền tảng VNPT IoT được thương mại hóa <strong>được hỗ trợ bởi công ty VNPTIoT.</strong>. Là người tạo ra VNPT và là người đóng góp chính của nó, VNPTIoT mang đến chuyên môn rộng lớn của mình để đảm bảo cung cấp nhanh chóng các giải pháp IoT của khách hàng, giảm đáng kể rủi ro và chi phí dự án, giúp nhóm của họ tìm hiểu cách sử dụng VNPT tốt nhất và hỗ trợ sản xuất ở cấp doanh nghiệp và dịch vụ bảo trì.</p>
+          <p> Dịch vụ nhà cung cấp VNPT bao gồm <strong>hỗ trợ chuyên môn và kỹ thuật</strong> cho các nhóm khách hàng, cũng như một <strong>hỗ trợ sản xuất</strong>. Để biết thêm thông tin, hãy truy cập <a href="https://www.vnptiot.io/services" class="link--blue"
+                                                               target="_blank">VNPTIoT website</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Call to action-->
+    <div class="overview__bbla-program get-free-trial-button">
+  <h2 class="platform-info__section__title">Bạn đã sẵn sàng để bắt đầu?</h2>
+
+  <div class="button-group b-button--mt--24 --mb--24--md">
+    <a class="b-button--rounded-blue --text-bold" href="free-trial.html">Thử miễn phí</a>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<section id="mk-footer" class="--font-rubik">
+  <div class="footer footer--no-gradient --background--white">
+    <div class="mk-grid">
+                            <div class="footer__upperside">
+                          <span class="footer__menu">
+                              <a href="overview.html">Đặt trưng</a>
+                              <a href="platform.html">Ưu điểm</a>
+                              <a href="blog.html">Blog</a>
+                              <a href="vnpt-iot-webinars.html">Hội thảo</a>
+                              <a href="events.html">Sự kiện</a>
+                              <a href="index.html">VNPT 0.x</a>
+                              <a href="contact-us.html">Liên hệ</a>
+                          </span>
+
+          <span class="footer__social-links">
+            <a href="https://github.com/vnptproject/vnpt/" target="_blank" rel="noopener">
+                <img src="img/social-icons/github.svg" alt="Github" width="24" height="24"/>
+            </a>
+
+            <a href="https://www.linkedin.com/company/vnpt-enterprise-iot-platform/" target="_blank" rel="noopener">
+                <img src="img/social-icons/linkedin.svg" alt="Linkedin" width="24" height="24"/>
+            </a>
+
+            <a href="https://twitter.com/vnptiot" target="_blank" rel="noopener">
+                <img src="img/social-icons/twitter.svg" alt="Twitter" width="24" height="24"/>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCWsH3l0fy9XNBwrbu4yeKZg" target="_blank" rel="noopener">
+                <img src="img/social-icons/youtube.svg" alt="Youtube" width="24" height="24"/>
+            </a>
+            <a href="https://www.facebook.com/VNPTIoT" target="_blank" rel="noopener">
+                <img src="img/social-icons/facebook.svg" alt="Facebook" width="24" height="24"/>
+            </a>
+          </span>
+        </div>
+      
+      <div class="footer__downside">
+                        <span class="mk-footer-copyright footer__copyright --background--white">© 2014 - 2019 VNPTIoT Technologies, LLC. All Rights Reserved<br><span>All the trademarks, service marks and logos are property of their respective owners.</span>
+                            <span class="footer__link-divider">|</span>
+                            <a class="copyright__link link--blue" href="terms-of-use.html" target="_blank">Terms of Use</a>
+                            <span class="footer__link-divider">|</span>
+                            <a class="copyright__link link--blue" href="privacy-policy/index.html" target="_blank">Privacy Policy</a>
+                            <span class="footer__link-divider">|</span>
+                            <a class="copyright__link link--blue" href="vnpt-sandbox-terms-of-use/index.html">VNPT Sandbox Terms of Use</a>
+                            <span class="footer__link-divider">|</span>
+                            <a class="copyright__link link--blue" href="cookies-policy.html" target="_blank">Cookies Policy</a>
+                            <span class="footer__link-divider">|</span>
+                        </span>
+        <div>
+        </div>
+
+        <div class="clearboth"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+</div>
+<a href="#" class="mk-go-top"><i class="mk-icon-chevron-up"></i></a>
+<div class="mk-fullscreen-search-overlay">
+<a href="#" class="mk-fullscreen-close"><i class="mk-moon-close-2"></i></a>
+<div id="mk-fullscreen-search-wrapper">
+<form method="get" id="mk-fullscreen-searchform" action="https://www.vnptproject.org/">
+  <input type="text" value="" name="search" id="mk-fullscreen-search-input"/>
+  <i class="mk-icon-search fullscreen-search-icon"><input value="" type="submit"/></i>
+</form>
+</div>
+</div>
+
+<div class="fixed fixed--bottom cookie-disclaimer">
+<div class="cookie-disclaimer__body --flex--centered">
+<p class="cookie-disclaimer__message">
+  We use cookies to enhance your experience. Please visit our
+  <a href="cookies-policy/index.html" target="_blank">Cookies Policy</a>
+  page for more information about cookies and how we use them.
+</p>
+
+<div>
+  <button class="cookie-disclaimer__button b-button b-button--background--black b-button--text-width b-button--padding--small">Close
+  </button>
+</div>
+</div>
+</div>
+
+<!--AOS-->
+<script src="libs/aos/aos-2.3.1.min.js"></script>
+<link rel="stylesheet" href="libs/aos/aos.css">
+<script src="js/aos-mount.js"></script>
+<!--AOS end-->
+
+<!--Google Analytics-->
+<script src="js/google-analytics-events.js"></script>
+<!--Google Analytics end-->
+
+</body>
+
+<!-- Mirrored from www.vnptproject.org/platform by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2019 01:23:21 GMT -->
+</html>

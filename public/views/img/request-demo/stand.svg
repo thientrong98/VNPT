@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="315px" height="32px" viewBox="0 0 315 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Bottom</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Live-demo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="live-demo-" transform="translate(-214.000000, -832.000000)">
+            <g id="Image_laptop" transform="translate(69.000000, 496.000000)">
+                <g id="Group" transform="translate(0.000000, 167.000000)">
+                    <g id="Bottom" transform="translate(145.000000, 169.000000)">
+                        <path d="M12.8021105,-1.77635684e-15 L304.396572,3.10862447e-15 C305.275217,2.94722e-15 306.05096,0.573459587 306.308635,1.41347189 L314.897676,29.4134719 C315.221606,30.4694751 314.628144,31.5881324 313.572141,31.912063 C313.382088,31.9703619 313.184406,32 312.985613,32 L2.78156273,32 C1.67699323,32 0.781562727,31.1045695 0.781562727,30 C0.781562727,29.7703181 0.821125901,29.5423525 0.898516999,29.3261018 L10.9190648,1.3261018 C11.2037025,0.530750442 11.9573606,-5.10955774e-16 12.8021105,-6.66133815e-16 Z" id="Rectangle-" fill="#303941"></path>
+                        <path d="M28.3561977,16 L286.84543,16" id="Line-" stroke="#D8D8D8" stroke-linecap="square" stroke-dasharray="3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
