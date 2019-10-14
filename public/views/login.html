@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html class="login-pf" xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" class="login-pf">
 <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
@@ -14,7 +14,9 @@
         <script src="libs/jquery-3.3.1.min.js"></script>
         <script src="js/appecaa.js?id=10a2772615a3e0af684c" type="text/javascript"></script>
         <!-- <link rel="css/boots.css" rel="stylesheet" type="text/css"> -->
-      
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <!--CodeMirror-->
         <script src="libs/codemirror/codemirror-5.47.0.min.js"></script>
         <script src="libs/codemirror/codemirror-autorefresh.js"></script>
@@ -112,6 +114,22 @@
             a.appendChild(r);
           })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
         </script>
+        <style>
+          .login-pf{
+            background-color: aliceblue;
+          }
+          .card-pf {
+            background-color: aliceblue;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+          }  
+        </style>
       </head>
  <body class="">
   <!-- Google Tag Manager (noscript) -->
@@ -120,17 +138,8 @@
    </iframe>
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <div class="login-pf-page">
-   <div class="login-pf-page-header" id="kc-header">
-    <div class="" id="kc-header-wrapper">
-     <div class="kc-logo-text">
-      <span>
-       KaaIoT
-      </span>
-     </div>
-    </div>
-   </div>
-   <div class="card-pf">
+  
+   <div class="card-pf" style="width: 500px; height:439px;">
     <header class="login-pf-header">
      <h1 id="kc-page-title">
       Đăng nhập
@@ -143,30 +152,29 @@
         <form action="https://id.kaaiot.io/auth/realms/master/login-actions/authenticate?session_code=HkkcB4SZzd6CFw0HpPstZ_1OToFEL2xWo2qyPMm-nis&amp;execution=fb213ce4-fd5e-4864-bd59-11a259a2401a&amp;client_id=kaaproject.org&amp;tab_id=QgcQVh6O-RI" id="kc-form-login" method="post" onsubmit="login.disabled = true; return true;">
          <div class="form-group">
           <label class="control-label" for="username">
-           Corporate email
+          Email
           </label>
           <input autocomplete="off" autofocus="" class="form-control" id="username" name="username" tabindex="1" type="text" value=""/>
          </div>
          <div class="form-group">
           <label class="control-label" for="password">
-           Password
+          Mật khẩu
           </label>
           <input autocomplete="off" class="form-control" id="password" name="password" tabindex="2" type="password"/>
          </div>
-         <div class="form-group login-pf-settings">
+         <div class="form-group login-pf-settings"style="margin-left: 0px;">
           <div id="kc-form-options">
            <div class="checkbox">
             <label>
-             <input id="rememberMe" name="rememberMe" tabindex="3" type="checkbox"/>
-             Remember me
+             <input id="rememberMe" name="rememberMe" tabindex="3" type="checkbox" />
+             Ghi nhớ
             </label>
            </div>
+           <div class="">
+              <span><a tabindex="5" href="/auth/realms/master/login-actions/reset-credentials?client_id=kaaproject.org&amp;tab_id=kK4TeqFBsS4">Quên mật khẩu?</a></span>
           </div>
-          <div class="">
-           <span>
-            Quên mật khẩu?
-           </span>
           </div>
+          
          </div>
          <div class="form-group" id="kc-form-buttons">
           <input class="btn btn-primary btn-block btn-lg" id="kc-login" name="login" tabindex="4" type="submit" value="Log In">
@@ -179,7 +187,7 @@
        <div class="" id="kc-info-wrapper">
         <div id="kc-registration">
          <span>
-          No KaaID yet? Đăng ký
+          Đăng ký
          </span>
         </div>
        </div>
