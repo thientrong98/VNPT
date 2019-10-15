@@ -41,7 +41,7 @@ position: relative !important;
 }
 
 *, body {
-  font-family: 'Open Sans', verdana;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .single-post .download_button {
@@ -72,8 +72,10 @@ position: relative !important;
 }
 
 #mk-header .header-logo a img {
-    height: 54px;
-    width: 90px;
+    height: 35px;
+    width: 150px;
+    margin-left: -37px;
+    margin-top: 10px
 }
 
 @media screen and (max-width: 1400px) {
@@ -137,6 +139,7 @@ position: relative !important;
 
 .header-style-1.header-align-left .mk-grid .mk-header-nav-container {
     height: 90px;
+    background-color: #50a7e6;
 }
 /*pogo social header fix*/
 #mk-header.header-style-1.sticky-style-fixed .mk-search-trigger{

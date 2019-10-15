@@ -1,234 +1,623 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>VNPT: Welcome</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css"><link rel="stylesheet" href="/stylesheets/style.css"><link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+ <head>
+  <title>
+   VNPT: Welcome
+  </title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/stylesheets/style.css" rel="stylesheet"/>
+  <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
     new Date().getTime(),event:'gtm.js'});
+
     var f=d.getElementsByTagName(s)[0],
+
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
     'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=EIoqENxVxNmZAh2Xnhejlw&gtm_preview=env-1&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+
     })(window,document,'script','dataLayer','GTM-TN4KRX');
-    </script>
-    <link href="css/app7069.css?id=ed9800a0f51c2270151e" rel="stylesheet" type="text/css">
-    <script src="libs/jquery-3.3.1.min.js"></script>
-    <script src="js/appecaa.js?id=10a2772615a3e0af684c" type="text/javascript"></script>
+  </script>
+  <link href="css/app7069.css?id=ed9800a0f51c2270151e" rel="stylesheet" type="text/css"/>
+  <script src="libs/jquery-3.3.1.min.js">
+  </script>
+  <script src="js/appecaa.js?id=10a2772615a3e0af684c" type="text/javascript">
+  </script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+  </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  </head>
-  <body><!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN4KRX&gtm_auth=EIoqENxVxNmZAh2Xnhejlw&gtm_preview=env-1&gtm_cookies_win=x"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="row row-full row-offcanvas row-offcanvas-left">
-      <div class="header">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+  <style>
+    .rounded-button {
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+    min-width: 150px;
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 16px 20px 15px;
+    background-repeat: no-repeat;
+}
+.button--theme--yes {
+    background-image: url(/images/feedback/upvote.svg);
+    border-color: rgb(130, 192, 124);
+    background-position: left 32px top 11px;
+}
+.feedback .feedback__rounded-button {
+    margin: 10px 8px 0px;
+}
+.button--theme--no {
+    background-image: url(/images/feedback/downvote.svg);
+    border-color: rgb(228, 105, 74);
+    background-position: left 36px top 19px;
+}
+  </style>
+ </head>
+ <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-TN4KRX&gt;m_auth=EIoqENxVxNmZAh2Xnhejlw&gt;m_preview=env-1&gt;m_cookies_win=x" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="row row-full row-offcanvas row-offcanvas-left">
+   <!-- <div class="header" >
+
         <div class="header-logo">
-          <a href="/"><img src="/images/logo-docs.svg" alt="Kaa Logo"></a></div>
+
+          <a href="/"><img src="/images/logo-docs.svg" alt="VNPT Logo"></a></div>
+
           <div class="header-menu">
+
             <div class="header-menu-item dropdown-wrapper" id="header-nav-Basics">
+
               <a href="#">Basics</a>
+
               <div class="dropdown-content">
+
                 <span class="dropdown">
-                  <a href="/KAA/docs/current/Kaa-concepts/">Kaa concepts</a>
+
+                  <a href="/VNPT/docs/current/VNPT-concepts/">VNPT concepts</a>
+
                 </span>
+
                 <span class="dropdown">
-                  <a href="/KAA/docs/current/Architecture-overview/">Architecture overview</a>
+
+                  <a href="/VNPT/docs/current/Architecture-overview/">Architecture overview</a>
+
                 </span>
+
                 </div>
+
               </div>
+
               <div class="header-menu-item dropdown-wrapper" id="header-nav-Components">
+
                 <a href="#">Components</a><div class="dropdown-content">
+
                   <span class="dropdown">
+
                     <a href="#">Identity management</a>
+
                     <div class="dropdown-content">
+
                       <span class="dropdown">
+
                         <a href="/EPR/docs/current/Overview/">Endpoint Register (EPR)</a>
+
                       </span>
+
                       <span class="dropdown">
+
                         <a href="/EPMX/docs/current/Overview/">Endpoint Metadata Extension (EPMX)</a>
+
                       </span>
+
                       <span class="dropdown">
+
                         <a href="/CM/docs/current/Overview/">Credential Management (CM)</a>
+
                       </span>
+
                     </div>
+
                   </span>
+
                   <span class="dropdown">
+
                     <a href="#">Communication</a>
+
                     <div class="dropdown-content">
+
                       <span class="dropdown"
-                      ><a href="/KPC/docs/current/Overview/">Kaa Protocol Communication (KPC)</a>
+
+                      ><a href="/KPC/docs/current/Overview/">VNPT Protocol Communication (KPC)</a>
+
                     </span>
+
                     <span class="dropdown">
+
                       <a href="/EPL/docs/current/Overview/">Endpoint Lifecycle (EPL)</a>
+
                     </span>
+
                   </div>
+
                 </span>
+
                 <span class="dropdown">
+
                   <a href="#">Data collection</a>
+
                   <div class="dropdown-content">
+
                     <span class="dropdown">
+
                       <a href="/DCX/docs/current/Overview/">Data Collection Extension (DCX)</a>
+
                     </span>
+
                     <span class="dropdown">
+
                       <a href="/EPTS/docs/current/Overview/">Endpoint Time Series (EPTS)</a>
+
                     </span>
+
                     <span class="dropdown">
+
                       <a href="/KDCA/docs/current/Overview/">Kafka Data Collection Adapter (KDCA)</a>
+
                     </span>
+
                     <span class="dropdown">
+
                       <a href="/MDCA/docs/current/Overview/">MongoDB Data Collection Adapter (MDCA)</a>
+
                     </span>
+
                   </div>
+
                 </span>
+
                 <span class="dropdown">
+
                   <a href="#">Configuration management</a>
+
                   <div class="dropdown-content">
+
                     <span class="dropdown">
+
                     <a href="/CMX/docs/current/Overview/">Configuration Management Extension (CMX)</a>
+
                   </span>
+
                   <span class="dropdown">
+
                     <a href="/ECR/docs/current/Overview/">Endpoint Configuration Repository (ECR)</a>
+
                   </span>
+
                 </div>
+
               </span>
+
               <span class="dropdown">
+
                 <a href="#">Command invocation</a>
+
                 <div class="dropdown-content">
+
                   <span class="dropdown">
+
                     <a href="/CEX/docs/current/Overview/">Command Execution Extension (CEX)</a>
+
                   </span>
+
                   <span class="dropdown">
+
                     <a href="/RCI/docs/current/Overview/">REST Command Invocation (RCI)</a>
+
                   </span>
+
                 </div>
+
               </span>
+
               <span class="dropdown">
+
                 <a href="#">Software updates</a>
+
                 <div class="dropdown-content">
+
                   <span class="dropdown">
+
                     <a href="/OTAO/docs/current/Overview/">Over-the-air Orchestrator (OTAO)</a>
-                  </span></div></span><span class="dropdown"><a href="#">Front-end</a><div class="dropdown-content"><span class="dropdown"><a href="/WD/docs/current/Overview/">Web Dashboard (WD)</a></span></div></span><span class="dropdown"><a href="#">Service infrastructure</a><div class="dropdown-content"><span class="dropdown"><a href="/SCR/docs/current/Overview/">Service Configuration Repository (SCR)</a></span></div></span><span class="dropdown"><a href="#">Miscellaneous</a><div class="dropdown-content"><span class="dropdown"><a href="/TSX/docs/current/Overview/">Time Synchronization Extension (TSX)</a></span></div></span></div></div><a class="header-menu-item" href="https://github.com/kaaproject/kaa-rfcs/blob/master/README.md">RFCs</a><a class="header-menu-item" href="/KAA/docs/current/Tutorials">Tutorials</a></div><div class="free_trial"><a class="free_trial__button" href="https://www.kaaproject.org/request-free-trial/" target="_blank">Get Free Trial</a></div><div class="search"><iframe src="https://duckduckgo.com/search.html?width=200&site=docs.kaaiot.io&prefill=Search across Kaa Docs&kn=1&k1=-1&kac=1&kj=o" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe></div><div class="clear"></div></div><div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
+
+                  </span></div></span><span class="dropdown"><a href="#">Front-end</a><div class="dropdown-content"><span class="dropdown"><a href="/WD/docs/current/Overview/">Web Dashboard (WD)</a></span></div></span><span class="dropdown"><a href="#">Service infrastructure</a><div class="dropdown-content"><span class="dropdown"><a href="/SCR/docs/current/Overview/">Service Configuration Repository (SCR)</a></span></div></span><span class="dropdown"><a href="#">Miscellaneous</a><div class="dropdown-content"><span class="dropdown"><a href="/TSX/docs/current/Overview/">Time Synchronization Extension (TSX)</a></span></div></span></div></div><a class="header-menu-item" href="https://github.com/vnptproject/vnpt-rfcs/blob/master/README.md">RFCs</a><a class="header-menu-item" href="/VNPT/docs/current/Tutorials">Tutorials</a></div><div class="free_trial"><a class="free_trial__button" href="https://www.vnptproject.org/request-free-trial/" target="_blank">Get Free Trial</a></div><div class="search"><iframe src="https://duckduckgo.com/search.html?width=200&site=docs.vnptiot.io&prefill=Search across VNPT Docs&kn=1&k1=-1&kac=1&kj=o" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe></div><div class="clear"></div></div> -->
+   <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar" style="background-color: #f4f4f4;padding-left: 20px;padding-right: 20px;height: calc(100% - 75px);">
     <ul class="nav">
-    <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
-    </ul><h2 class="sidebar__service-name">VNPT IoT Platform</h2><ul class="nav hidden-xs" id="lg-menu"><li class="dropdown text-center sidebar-header"><a class="dropdown-toggle" href="#" id="selected_version" data-toggle="dropdown" aria-expanded="false">current<span class="caret"></span></a><ul class="dropdown-menu" id="version-select"><li class="li-version-current (latest)"><a href="/KAA/docs/current/">current (latest)</a></li></ul></li><hr class="sidebar__divider" />
-    <div class="sidebar-navigation-container nav"><ul><li class="selected-true active" data-url="/KAA/docs/current/Welcome/" data-location="/KAA/docs/current/Welcome/" data-isChildActive><a href="/KAA/docs/current/Welcome/"><span>Welcome</span></a></li><li class="selected-false " data-url="/KAA/docs/current/Kaa-concepts/" data-location="/KAA/docs/current/Welcome/"><a href="/KAA/docs/current/Kaa-concepts/"><span>Kaa concepts</span></a></li><li class="selected-false " data-url="/KAA/docs/current/Architecture-overview/" data-location="/KAA/docs/current/Welcome/"><a href="/KAA/docs/current/Architecture-overview/"><span>Architecture overview</span></a></li><li class="selected-false " data-url="/KAA/docs/current/Features/" data-location="/KAA/docs/current/Welcome/"><a class="has-child" href="/KAA/docs/current/Features/"><span class="car-field"><span class="caret"></span></span><span>Features</span></a><ul><li class="selected-false " data-url="/KAA/docs/current/Features/Device-management/" data-location="/KAA/docs/current/Welcome/"><a href="/KAA/docs/current/Features/Device-management/"><span>Device management</span></a></li><li class="selected-false " data-url="/KAA/docs/current/Features/Communication/" data-location="/KAA/docs/current/Welcome/"><a href="/KAA/docs/current/Features/Communication/"><span>Communication</span></a></li><li class="selected-false " data-url="/KAA/docs/current/Features/Data-collection/" data-location="/KAA/docs/current/Welcome/"><a href="/KAA/docs/current/Features/Data-collection/"><span>Data collection</span></a></li><li class="selected-false " data-url="/KAA/docs/current/Features/Configuration-management/" data-location="/KAA/docs/current/Welcome/"><a href="/KAA/docs/current/Features/Configuration-management/"><span>Configuration management</span></a></li><li class="selected-false " data-url="/KAA/docs/current/Features/Command-invocation/" data-location="/KAA/docs/current/Welcome/"><a href="/KAA/docs/current/Features/Command-invocation/"><span>Command invocation</span></a></li><li class="selected-false " data-url="/KAA/docs/current/Features/Software-updates/" data-location="/KAA/docs/current/Welcome/"><a href="/KAA/docs/current/Features/Software-updates/"><span>Software updates</span></a></li></ul></li><li class="selected-false " data-url="/KAA/docs/current/Tutorials/" data-location="/KAA/docs/current/Welcome/"><a class="has-child" href="/KAA/docs/current/Tutorials/"><span class="car-field"><span class="caret"></span></span><span>Tutorials</span></a><ul><li class="selected-false " data-url="/KAA/docs/current/Tutorials/connect-device-to-iot-platform/" data-location="/KAA/docs/current/Welcome/"><a href="/KAA/docs/current/Tutorials/connect-device-to-iot-platform/"><span>How to connect a device</span></a></li><li class="selected-false " data-url="/KAA/docs/current/Tutorials/iot-data-collection/" data-location="/KAA/docs/current/Welcome/"><a href="/KAA/docs/current/Tutorials/iot-data-collection/"><span>Data collection</span></a></li><li class="selected-false " data-url="/KAA/docs/current/Tutorials/build-iot-dashboard/" data-location="/KAA/docs/current/Welcome/"><a href="/KAA/docs/current/Tutorials/build-iot-dashboard/"><span>Custom web dashboard</span></a></li><li class="selected-false " data-url="/KAA/docs/current/Tutorials/custom-microservice/" data-location="/KAA/docs/current/Welcome/"><a href="/KAA/docs/current/Tutorials/custom-microservice/"><span>Adding custom microservice</span></a></li><li class="selected-false " data-url="/KAA/docs/current/Tutorials/getting-started-kaa-cloud/" data-location="/KAA/docs/current/Welcome/"><a href="/KAA/docs/current/Tutorials/getting-started-kaa-cloud/"><span>Kaa Cloud Getting Started</span></a></li></ul></li></ul></div>
+     <li>
+      <a class="visible-xs text-center" data-toggle="offcanvas" href="#">
+       <i class="glyphicon glyphicon-chevron-right">
+       </i>
+      </a>
+     </li>
+    </ul>
+    <h2 class="sidebar__service-name">
+     VNPT IoT Platform
+    </h2>
+    <ul class="nav hidden-xs" id="lg-menu">
+     <!-- <li class="dropdown text-center sidebar-header">
+      <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" id="selected_version">
+       hiện hành
+      </a>
+      <ul class="dropdown-menu" id="version-select">
+       <li class="li-version-current (latest)">
+        <a href="/VNPT/docs/current/">
+         hiện tại (mới nhất)
+        </a>
+       </li>
+      </ul>
+     </li> -->
+     <hr class="sidebar__divider"/>
+     <div class="sidebar-navigation-container nav">
+      <ul>
+       <li class="selected-true active" data-ischildactive="" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Welcome/">
+        <a href="/VNPT/docs/current/Welcome/">
+         Chào mừng bạn
+        </a>
+       </li>
+       <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/VNPT-concepts/">
+        <a href="/VNPT/docs/current/VNPT-concepts/">
+         Ga Các khái niệm
+        </a>
+       </li>
+       <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Architecture-overview/">
+        <a href="/VNPT/docs/current/Architecture-overview/">
+         Tổng quan kiến ​​trúc
+        </a>
+       </li>
+       <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Features/">
+        <a class="has-child" href="/VNPT/docs/current/Features/">
+         Đặc trưng
+        </a>
+        <ul>
+         <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Features/Device-management/">
+          <a href="/VNPT/docs/current/Features/Device-management/">
+           quản lý thiết bị
+          </a>
+         </li>
+         <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Features/Communication/">
+          <a href="/VNPT/docs/current/Features/Communication/">
+           Giao tiếp
+          </a>
+         </li>
+         <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Features/Data-collection/">
+          <a href="/VNPT/docs/current/Features/Data-collection/">
+           Thu thập dữ liệu
+          </a>
+         </li>
+         <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Features/Configuration-management/">
+          <a href="/VNPT/docs/current/Features/Configuration-management/">
+           quản lý cấu hình
+          </a>
+         </li>
+         <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Features/Command-invocation/">
+          <a href="/VNPT/docs/current/Features/Command-invocation/">
+           lệnh gọi
+          </a>
+         </li>
+         <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Features/Software-updates/">
+          <a href="/VNPT/docs/current/Features/Software-updates/">
+           Nâng cấp phần mềm
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Tutorials/">
+        <a class="has-child" href="/VNPT/docs/current/Tutorials/">
+         Hướng dẫn
+        </a>
+        <ul>
+         <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Tutorials/connect-device-to-iot-platform/">
+          <a href="/VNPT/docs/current/Tutorials/connect-device-to-iot-platform/">
+           Làm thế nào để kết nối một thiết bị
+          </a>
+         </li>
+         <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Tutorials/iot-data-collection/">
+          <a href="/VNPT/docs/current/Tutorials/iot-data-collection/">
+           Thu thập dữ liệu
+          </a>
+         </li>
+         <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Tutorials/build-iot-dashboard/">
+          <a href="/VNPT/docs/current/Tutorials/build-iot-dashboard/">
+           bảng điều khiển web tùy chỉnh
+          </a>
+         </li>
+         <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Tutorials/custom-microservice/">
+          <a href="/VNPT/docs/current/Tutorials/custom-microservice/">
+           Thêm microservice tùy chỉnh
+          </a>
+         </li>
+         <li class="selected-false" data-location="/VNPT/docs/current/Welcome/" data-url="/VNPT/docs/current/Tutorials/getting-started-vnpt-cloud/">
+          <a href="/VNPT/docs/current/Tutorials/getting-started-vnpt-cloud/">
+           VNPT Mây Bắt đầu
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
     </ul>
     <ul class="nav visible-xs" id="xs-menu">
-    <li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
+     <li>
+      <a class="text-center" href="#featured">
+       <i class="glyphicon glyphicon-list-alt">
+       </i>
+      </a>
+     </li>
     </ul>
-    </div><div class="column col-sm-10 col-xs-11" id="main"><div class="main-content"><div><div class="row row-full row-offcanvas row-offcanvas-left">
-      <div id="page-content-wrapper">
+   </div>
+   <div class="column col-sm-10 col-xs-11" id="main">
+    <div class="main-content">
+     <div>
+      <div class="row row-full row-offcanvas row-offcanvas-left">
+       <div id="page-content-wrapper">
         <div class="container-fluid">
-          <div class="row row-full content">
-            
-              
-              
-              
+         <div class="row row-full content">
+          <div class="page">
+           <h1 class="page-title" id="page-title">
+            Chào mừng bạn
+           </h1>
+           <p>
+            Chào mừng bạn đến tài liệu VNPT.
+
+    Ở đây bạn có thể tìm thấy tất cả các thông tin kỹ thuật liên quan đến sản phẩm VNPT.
+           </p>
+           <p>
+            Trang này mô tả cách tài liệu VNPT được cấu trúc và những loại thông tin mà nó chứa.
+
+    Nếu bạn cần phải tìm ra nơi để điều hướng đến tìm kiếm thông tin, đọc dưới đây.
+           </p>
+           <table style="background-color: transparent;border-spacing: 0;
+           border-collapse: collapse;margin: 20px auto;
+    outline: 2px solid white; margin-left: 50px">
+            <tr>
+             <th colspan="2" style="text-align:center; background-color: #f4f4f4;">
+              VNPT documentation
+             </th>
+            </tr>
+            <tr>
+             <td style="width:50%; vertical-align:top;outline: 1px solid #DEDEDE;">
+              <p>
+               Khái niệm VNPT →
+              </p>
+              <ul>
+               <li>
+                  Phần này giải thích ở mức cao các khái niệm chung được sử dụng trong tài liệu VNPT.
+               </li>
+               <li>
+                  Nó mô tả các bộ phận cấu thành của nền tảng VNPT và cách chúng hoạt động cùng nhau.
+               </li>
+               <li>
+                  Nếu bạn chưa quen với VNPT, đây là nơi bạn có thể muốn bắt đầu.
+               </li>
+              </ul>
+              <p>
+               Các tính năng →
+              </p>
+              <ul>
+               <li>
+                  Tìm hiểu về các tính năng của nền tảng VNPT và cách sử dụng chúng.
+               </li>
+              </ul>
+              <p>
+               Tổng quan kiến ​​trúc →
+              </p>
+              <ul>
+               <li>
+                  Mô tả kỹ thuật chuyên sâu về kiến ​​trúc nền tảng VNPT.
+               </li>
+               <li>
+                  Nếu bạn đã biết những điều cơ bản về VNPT và / hoặc có một số kinh nghiệm về nhà phát triển, bạn có thể muốn đi sâu vào vấn đề này.
+               </li>
+              </ul>
+              <!--
+
     
-            
-            <div class="page">
-      <h1 class="page-title" id="page-title">Welcome</h1>
-      
-    <p>Welcome to the Kaa documentation.
-    Here you can find all <strong>technical information related to Kaa products</strong>.</p>
-    
-    <p>This page describes how Kaa documentation is structured and what kind of information it contains.<br />
-    If you need to figure out where to navigate to find information, read below.</p>
-    
-    <table>
-    <tr>
-    <th colspan="2" style="text-align:center;">Kaa documentation</th>
-    </tr>
-    <tr><td style="width:50%; vertical-align:top;">
-    
-          <p><strong><a href="/KAA/docs/current/Kaa-concepts/">Kaa concepts →</a></strong></p>
-    
-          <ul>
-            <li>This section explains at a high level the general concepts used in the Kaa documentation.</li>
-            <li>It describes the constituent parts of Kaa platform and how they work together.</li>
-            <li>If you are new to Kaa, this is the place you might want to start from.</li>
-          </ul>
-    
-          <p><strong><a href="/KAA/docs/current/Features/">Features →</a></strong></p>
-    
-          <ul>
-            <li>Learn about the Kaa platform features and how to use them.</li>
-          </ul>
-    
-          <p><strong><a href="/KAA/docs/current/Architecture-overview/">Architecture overview →</a></strong></p>
-    
-          <ul>
-            <li>An in-depth technical description of Kaa platform architecture.</li>
-            <li>If you already know Kaa basics and/or have some developer experience, you might want to dive into this one.</li>
-          </ul>
-    
-          <!--
-    
+
     [Design principles]()
+
     
-    - Design considerations behind how Kaa entities work together and why they are designed that way.
-    - Strategies that Kaa team adopts to maintain chosen design criteria.
+
+    - Design considerations behind how VNPT entities work together and why they are designed that way.
+
+    - Strategies that VNPT team adopts to maintain chosen design criteria.
+
     
+
     
+
     **[Setup guide]()**
+
     
-    - This section describes hardware and software requirements, guides through environment setup process, and explains how to stack up Kaa components to form a platform.
-    - It also contains a guide on how to install pre-configured Kaa blueprints.
+
+    - This section describes hardware and software requirements, guides through environment setup process, and explains how to stack up VNPT components to form a platform.
+
+    - It also contains a guide on how to install pre-configured VNPT blueprints.
+
     
+
     
+
     **[Configuration guide]()**
+
     
-    - How to configure Kaa services.
+
+    - How to configure VNPT services.
+
     
+
     
+
     **[Customization guide]()**
+
     
-    - Guide on how to customize Kaa services, add 3rd party components, and create your own stuff.
+
+    - Guide on how to customize VNPT services, add 3rd party components, and create your own stuff.
+
     
+
     
+
     **[Troubleshooting]()**
+
     
+
     - This section contains solutions to most common issues.
+
     
+
     
+
     **[Contribution guide]()**
+
     
-    - This section describes how you can send feedback to Kaa team, ask questions, propose additional functionality, and contribute changes to Kaa repositories.
+
+    - This section describes how you can send feedback to VNPT team, ask questions, propose additional functionality, and contribute changes to VNPT repositories.
+
     -->
-        </td>
-    
-    <td style="width:50%; vertical-align:top;">
-    
-          <p><a href="#" id="componentsLink"><b>Components →</b></a></p>
-    
-          <ul>
-            <li>All Kaa services are documented here. Click the <strong>Components</strong> button at the top of the page to access the documentation.</li>
-            <li>You will find information on how to configure and deploy any of the Kaa services.</li>
-            <li>Kaa service API documentation.</li>
-          </ul>
-    
-          <p><strong><a href="/KAA/docs/current//Tutorials">Tutorials →</a></strong></p>
-    
-          <ul>
-            <li>Practical examples on how to work with Kaa in different use cases.</li>
-          </ul>
-    
-          <p><strong><a href="https://github.com/kaaproject/kaa-rfcs#kaa-rfcs">Kaa RFCs →</a></strong></p>
-    
-          <ul>
-            <li>This is Kaa team’s repository that contains Kaa RFCs—most of them describe interface protocols that define how services exchange data in a Kaa deployment.</li>
-          </ul>
-    
-        </td>
-    </tr>
-    </table>
-    
-    </div>
-    
+             </td>
+             <td style="width:50%; vertical-align:top;">
+              <p>
+                  Các thành phần →
+              </p>
+              <ul>
+               <li>
+                  Tất cả các dịch vụ của VNPT đều được ghi lại ở đây. Nhấn vào
+                <strong>
+                 Các thành phần
+                </strong>
+                đầu trang để truy cập tài liệu.
+               </li>
+               <li>
+                  Bạn sẽ tìm thấy thông tin về cách định cấu hình và triển khai bất kỳ dịch vụ VNPT nào.
+               </li>
+               <li>
+                  Tài liệu API dịch vụ VNPT.
+               </li>
+              </ul>
+              <p>
+               Hướng dẫn →
+              </p>
+              <ul>
+               <li>
+                  Các ví dụ thực tế về cách làm việc với VNPT trong các trường hợp sử dụng khác nhau.
+               </li>
+              </ul>
+              <p>
+               VNPT RFC →
+              </p>
+              <ul>
+               <li>
+                  Đây là kho lưu trữ nhóm VNPT có chứa VNPT RFCs Phần lớn trong số chúng mô tả các giao thức giao diện xác định cách thức các dịch vụ trao đổi dữ liệu trong triển khai VNPT.
+               </li>
+              </ul>
+             </td>
+            </tr>
+           </table>
           </div>
+         </div>
         </div>
+       </div>
       </div>
+     </div>
     </div>
-    </div></div><div class="container-fluid"><hr><div class="feedback"><div class="feedback__header">Leave your feedback about the page</div><form class="feedback" method="POST" id="feedback-form"><div class="feedback__form-group"><label class="feedback__input__label">Did you find this article useful?</label><div class="feedback__button-group"><label><input class="hidden" type="radio" name="rate" placeholder="" value="Yes"><div class="rounded-button button--theme--yes feedback__rounded-button"><span class="rounded-button__label">Yes</span></div></label><label><input class="hidden" type="radio" name="rate" placeholder="" value="No"><div class="rounded-button button--theme--no feedback__rounded-button"><span class="rounded-button__label">No</span></div></label></div></div><div class="feedback__form-group"><label class="feedback__input__label" for="email">Enter your email:</label><input class="feedback__email" id="email" name="email" type="email" required="required"><label class="feedback__input__label" for="comment">Leave your feedback here:</label><textarea class="feedback__comment" id="comment" name="comment" cols="30" rows="5" required="required"></textarea></div><button class="button" type="submit">Submit</button></form></div></div><div class="footer"><p><a href="https://www.kaaiot.io/">© 2016-2019 KaaIoT Technologies, LLC.</a></p></div></div></div><script src="/javascripts/jquery.min.js"></script><script src="/javascripts/topNav.js"></script><script src="/javascripts/bootstrap/bootstrap.min.js"></script><script src="/javascripts/jquery.csv.min.js"></script><script src="/javascripts/featherlight.min.js"></script><script src="/javascripts/js.cookie.js"></script><script src="/javascripts/lunr.min.js"></script><script src="/javascripts/validator.js"></script><script src="/javascripts/utils.js"></script><script src="/javascripts/feedback.js"></script><script src="/javascripts/scripts.js"></script><script src="/javascripts/componentsLink.js"></script></body></html>
+    <div class="container-fluid" style="padding: 40px;
+    max-width: 1200px;
+    overflow: auto;
+    padding-bottom: 100px;margin-right: auto;
+    margin-left: auto;">
+     <hr/>
+     <div class="feedback">
+      <div class="feedback__header" style="font-size: 24px">
+          Để lại phản hồi của bạn về trang
+      </div><br>
+      <form class="feedback" id="feedback-form" method="POST">
+       <div class="feedback__form-group">
+        <label class="feedback__input__label">
+            Bạn thấy bài viết này hữu ích?
+        </label>
+        <div class="feedback__button-group">
+         <label>
+          <input class="hidden" name="rate" placeholder="" type="radio" value="Yes"/>
+          <div class="rounded-button button--theme--yes feedback__rounded-button">
+           <span class="rounded-button__label">
+            Có
+           </span>
+          </div>
+         </label>
+         <label>
+          <input class="hidden" name="rate" placeholder="" type="radio" value="No"/>
+          <div class="rounded-button button--theme--no feedback__rounded-button">
+           <span class="rounded-button__label">
+            Không
+           </span>
+          </div>
+         </label>
+        </div>
+       </div><br>
+       <div class="feedback__form-group">
+        <label class="feedback__input__label" for="email">
+            Nhập email của bạn:
+        </label><br>
+        <input class="feedback__email" id="email" name="email" required="required" type="email"/><br><br>
+        <label class="feedback__input__label" for="comment">
+            Để lại phản hồi của bạn ở đây:
+        </label>
+        <textarea class="feedback__comment" cols="30" id="comment" name="comment" required="required" rows="5"></textarea>
+       </div>
+       <button class="button" type="submit">
+       Gửi
+       </button>
+      </form>
+     </div>
+    </div>
+    
+    </div>
+   </div>
+  </div>
+  <script src="/javascripts/jquery.min.js">
+  </script>
+  <script src="/javascripts/topNav.js">
+  </script>
+  <script src="/javascripts/bootstrap/bootstrap.min.js">
+  </script>
+  <script src="/javascripts/jquery.csv.min.js">
+  </script>
+  <script src="/javascripts/featherlight.min.js">
+  </script>
+  <script src="/javascripts/js.cookie.js">
+  </script>
+  <script src="/javascripts/lunr.min.js">
+  </script>
+  <script src="/javascripts/validator.js">
+  </script>
+  <script src="/javascripts/utils.js">
+  </script>
+  <script src="/javascripts/feedback.js">
+  </script>
+  <script src="/javascripts/scripts.js">
+  </script>
+  <script src="/javascripts/componentsLink.js">
+  </script>
+ </body>
+</html>
