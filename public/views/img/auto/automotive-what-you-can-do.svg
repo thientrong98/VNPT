@@ -9,13 +9,13 @@
 <filter id="ag" x="-3.4%" y="-3.4%" width="106.8%" height="109.5%">
 <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
 <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
-<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0"/>
+<feColorMatrix in="shadowBlurOuter1"/>
 </filter>
 <rect id="x" width="207" height="147" rx="5"/>
 <filter id="af" x="-3.4%" y="-3.4%" width="106.8%" height="109.5%">
 <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
 <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
-<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0"/>
+<feColorMatrix in="shadowBlurOuter1"/>
 </filter>
 <rect id="w" width="207" height="147" rx="5"/>
 <filter id="ae" x="-3.4%" y="-3.4%" width="106.8%" height="109.5%">
